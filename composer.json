@@ -1,0 +1,23 @@
+{
+    "name": "vodmal/rector-phpstan-extension-installer",
+    "authors": [
+        {
+            "name": "Dmitry Vorobyev",
+            "email": "dmitry@vorobyev.name"
+        }
+    ],
+    "require-dev": {
+        "rector/rector": "^1.2",
+        "phpstan/extension-installer": "^1.4",
+        "tomasvotruba/unused-public": "^0.3.10"
+    },
+    "scripts": {
+        "rector": "./vendor/bin/rector process -n",
+        "phpstan": "./vendor/bin/phpstan analyse --memory-limit=-1"
+    },
+    "config": {
+        "allow-plugins": {
+            "phpstan/extension-installer": true
+        }
+    }
+}

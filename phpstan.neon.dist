@@ -1,0 +1,10 @@
+parameters:
+    level: 0
+    paths:
+        - src
+    unused_public:
+        methods: 25.0
+        properties: true
+        constants: true
+includes:
+    - phar://vendor/phpstan/phpstan/phpstan.phar/conf/bleedingEdge.neon
